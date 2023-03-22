@@ -1,0 +1,15 @@
+# On every push to main, echo a string to the terminal
+name: echo
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  echo:
+    name: echo a string
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look! I'm a string!"
+    
