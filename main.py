@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def index():
-    return jsonify({ "name": "AI Decision Maker",
+    return jsonify({ "name": "AI Decision Maker!",
                      "description": "Use cutting edge technology to answer yes/no questions.",
                      "instructions": "Think carefully about a decision you need to make, then make a GET request to /decide."})
 
