@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return jsonify({ "name": "AI Decision Maker!",
                      "description": "Use cutting edge technology to answer yes/no questions.",
-                     "instructions": "Think carefully about a decision you need to make, then make a GET request to /decide."})
+                     "instructions": "Think *carefully* about a decision you need to make, then make a GET request to /decide."})
 
 @app.route("/decide", methods=["GET"])
 def decide():
